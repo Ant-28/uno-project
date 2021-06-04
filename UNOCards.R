@@ -29,8 +29,12 @@ cardsample <- function(numplayers,deck,numcards){
   cards_drawn <- numplayers*numcards
   #another layer of randomness because why not?
   set.seed(seedgen())
-  ifelse(cards_drawn > 80, deckerror() ,
-  deckbuilder(deck, cards_drawn, numplayers))
+  if(cards_drawn > 80){ 
+    deckerror()
+  } 
+  else{
+  deckbuilder(deck, cards_drawn, numplayers)
+  }
 }
 
 
@@ -43,3 +47,6 @@ deckbuilder <- function(deck, cards_drawn, numplayers){
 deckerror <- function(){
   "Discard Pile Too Small, There Should be at least 28 cards in the discard pile"
 }
+
+Deck <- cardsample(8,unocards,10)
+Deck$`Player 1`
