@@ -17,6 +17,7 @@ unocards <- c(not_wilds_color, wilds)
 
 seedgen <- function()
 {
+  #why do I do this?
   maxint <- .Machine$integer.max
   torturesample <- replicate(10000, {
   sample(-maxint:maxint, size = 1)})
@@ -37,7 +38,7 @@ deckbuilder <- function(deck, cards_drawn, numplayers){
   
   cardsample <- sample(deck, cards_drawn, replace = FALSE)
   cards <- split(cardsample,str_c('Player',c(1:numplayers), sep = " "))
-  return(cards)
+  cards
 }
 deckerror <- function(){
   "Discard Pile Too Small, There Should be at least 28 cards in the discard pile"
