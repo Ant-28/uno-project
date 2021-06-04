@@ -19,6 +19,15 @@ cards. However, the total number of cards drawn cannot exceed 80. This
 is because the standard UNO game has a maximum of 8 players with 10
 cards per player.
 
+## How to run this script:
+
+Download the R Scripts by cloning the repository and open the files in
+[RStudio](https://www.rstudio.com/products/rstudio/download/) The
+**UNOCards.R** script automatically installs libraries, so there are no
+prerequisites. Once run, the card deal for each player is saved in a
+data frame called Deck. Currently, the script will output the first
+entry (that is, Player 1’s hand) but that can be easily changed.
+
 ## Roadmap
 
 -   Creating a draw/discard pile
