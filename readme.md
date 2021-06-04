@@ -21,10 +21,12 @@ cards per player.
 
 ## How to run this script:
 
-Download the R Scripts by cloning the repository and open the files in
-[RStudio](https://www.rstudio.com/products/rstudio/download/). The
-**UNOCards.R** script automatically installs libraries, so there are no
-prerequisites. Once run, the card deal for each player is saved in a
+Download [Git and Git Bash](https://git-scm.com/downloads). Download the
+R Scripts by cloning the repository in Command Prompt or Git Bash:
+`git clone https://github.com/Ant-28/uno-project.git` Then, open the
+files in [RStudio](https://www.rstudio.com/products/rstudio/download/).
+The **UNOCards.R** script automatically installs libraries, so there are
+no prerequisites. Once run, the card deal for each player is saved in a
 data frame called Deck. Currently, the script will output the first
 entry (that is, Player 1’s hand) but that can be easily changed.
 
