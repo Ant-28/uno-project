@@ -5,7 +5,7 @@ Uno Projects
 
 This is a small project containing scripts pertaining to the card game
 UNO! (Info [here](https://en.wikipedia.org/wiki/Uno_(card_game)))
-(Copyright Mattel, all rights reserved to them)
+(Copyright for the UNO! brand reserved to Mattel)
 
 ## Why are you doing this?
 
@@ -22,7 +22,7 @@ cards per player.
 ## How to run this script:
 
 Download the R Scripts by cloning the repository and open the files in
-[RStudio](https://www.rstudio.com/products/rstudio/download/) The
+[RStudio](https://www.rstudio.com/products/rstudio/download/). The
 **UNOCards.R** script automatically installs libraries, so there are no
 prerequisites. Once run, the card deal for each player is saved in a
 data frame called Deck. Currently, the script will output the first
