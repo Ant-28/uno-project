@@ -1,9 +1,13 @@
-#Calls a string library
-lib_use <- "stringr"
-ifelse(lib_use %in% installed.packages(), require(lib_use,character.only =  TRUE), {
-  install.packages(lib_use)
-  library(lib_use, character.only = TRUE)
-})
+#Calls a needed library
+lib_use <- c("stringr","knitr")
+for(i in 1:length(lib_use)){
+if(lib_use[i] %in% installed.packages()){
+  require(lib_use[i],character.only =  TRUE)
+}
+else {
+  install.packages(lib_use[i])
+  library(lib_use[i], character.only = TRUE)
+}}
 
 #used to create the deck of UNO cards
 {colours <- c("Red", "Blue", "Green", "Yellow")
