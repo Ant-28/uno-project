@@ -40,4 +40,4 @@ entry (that is, Player 1’s hand) but that can be easily changed.
 ## Wishlist
 
 -   Adding a User Interface (again, probably using the `menu()`
-    function?)
+    function or `shiny`?)
